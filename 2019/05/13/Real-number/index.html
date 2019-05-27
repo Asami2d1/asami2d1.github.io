@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="笔记,数学,微积分,">
+  <meta name="keywords" content="数学,微积分,笔记,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="实数系 本节试图给出实数系的定义, 以此作为微积分学的基础. 有序集 序关系 定义 1 (序关系) 设\(S\)是一个集合, \(S\)上的序关系\(\le\)是一种关系, 满足:  自反性: \(\forall x\in S, x\le x\). 反对称性: $x,yS, \(如果\)xy\(且\)yx\(, 则\)x=y$. 传递性: \(\forall x,y,z\in S">
-<meta name="keywords" content="笔记,数学,微积分">
+<meta name="description" content="内容基本来自于本学期集合论导引课程的笔记, 部分内容参考了Baby Rudin. 实数系 本节试图给出实数系的定义, 以此作为微积分学的基础. 有序集 序关系 定义 1 (序关系) 设\(S\)是一个集合, \(S\)上的序关系\(\le\)是一种关系, 满足:  自反性: \(\forall x\in S, x\le x\). 反对称性: \(\forall x,y \in S">
+<meta name="keywords" content="数学,微积分,笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【未完】实数系的建立">
 <meta property="og:url" content="https://asami2d1.github.io/2019/05/13/Real-number/index.html">
 <meta property="og:site_name" content="Not Even Weak">
-<meta property="og:description" content="实数系 本节试图给出实数系的定义, 以此作为微积分学的基础. 有序集 序关系 定义 1 (序关系) 设\(S\)是一个集合, \(S\)上的序关系\(\le\)是一种关系, 满足:  自反性: \(\forall x\in S, x\le x\). 反对称性: $x,yS, \(如果\)xy\(且\)yx\(, 则\)x=y$. 传递性: \(\forall x,y,z\in S">
+<meta property="og:description" content="内容基本来自于本学期集合论导引课程的笔记, 部分内容参考了Baby Rudin. 实数系 本节试图给出实数系的定义, 以此作为微积分学的基础. 有序集 序关系 定义 1 (序关系) 设\(S\)是一个集合, \(S\)上的序关系\(\le\)是一种关系, 满足:  自反性: \(\forall x\in S, x\le x\). 反对称性: \(\forall x,y \in S">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-05-16T02:36:51.235Z">
+<meta property="og:updated_time" content="2019-05-19T09:33:22.668Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【未完】实数系的建立">
-<meta name="twitter:description" content="实数系 本节试图给出实数系的定义, 以此作为微积分学的基础. 有序集 序关系 定义 1 (序关系) 设\(S\)是一个集合, \(S\)上的序关系\(\le\)是一种关系, 满足:  自反性: \(\forall x\in S, x\le x\). 反对称性: $x,yS, \(如果\)xy\(且\)yx\(, 则\)x=y$. 传递性: \(\forall x,y,z\in S">
+<meta name="twitter:description" content="内容基本来自于本学期集合论导引课程的笔记, 部分内容参考了Baby Rudin. 实数系 本节试图给出实数系的定义, 以此作为微积分学的基础. 有序集 序关系 定义 1 (序关系) 设\(S\)是一个集合, \(S\)上的序关系\(\le\)是一种关系, 满足:  自反性: \(\forall x\in S, x\le x\). 反对称性: \(\forall x,y \in S">
 
 
 
@@ -320,7 +320,8 @@
       
 
       
-        <h2 id="实数系">实数系</h2>
+        <p>内容基本来自于本学期集合论导引课程的笔记, 部分内容参考了<em>Baby Rudin</em>.</p>
+<h2 id="实数系">实数系</h2>
 <p>本节试图给出实数系的定义, 以此作为微积分学的基础.</p>
 <h3 id="有序集">有序集</h3>
 <h4 id="序关系">序关系</h4>
@@ -328,7 +329,7 @@
 <p>设<span class="math inline">\(S\)</span>是一个集合, <span class="math inline">\(S\)</span>上的序关系<span class="math inline">\(\le\)</span>是一种关系, 满足:</p>
 <ol type="1">
 <li><strong>自反性</strong>: <span class="math inline">\(\forall x\in S, x\le x\)</span>.</li>
-<li><strong>反对称性</strong>: $x,yS, <span class="math inline">\(如果\)</span>xy<span class="math inline">\(且\)</span>yx<span class="math inline">\(, 则\)</span>x=y$.</li>
+<li><strong>反对称性</strong>: <span class="math inline">\(\forall x,y \in S\)</span>, 如果<span class="math inline">\(x \le y\)</span>且<span class="math inline">\(y \le x\)</span>, 则<span class="math inline">\(x=y\)</span>.</li>
 <li><strong>传递性</strong>: <span class="math inline">\(\forall x,y,z\in S\)</span>, 如果<span class="math inline">\(x\le y, y\le z\)</span>, 则<span class="math inline">\(x\le z\)</span>.</li>
 </ol>
 <p>若<span class="math inline">\(x\le y\)</span> 且<span class="math inline">\(x \ne y\)</span>, 则记为<span class="math inline">\(x&lt;y\)</span>. <span class="math inline">\(&lt;\)</span>满足传递性不满足自反性和反对称性.</p>
@@ -537,11 +538,11 @@ A = \bigcap_{n \in M}n.
       
         <div class="post-tags">
           
-            <a href="/tags/笔记/" rel="tag"># 笔记</a>
-          
             <a href="/tags/数学/" rel="tag"># 数学</a>
           
             <a href="/tags/微积分/" rel="tag"># 微积分</a>
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
           
         </div>
       
@@ -563,6 +564,10 @@ A = \bigcap_{n \in M}n.
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/28/duality-principle/" rel="prev" title="射影几何与范畴论中的对偶原理">
+                射影几何与范畴论中的对偶原理 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -657,7 +662,7 @@ A = \bigcap_{n \in M}n.
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -670,7 +675,7 @@ A = \bigcap_{n \in M}n.
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>

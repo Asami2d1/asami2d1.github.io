@@ -239,6 +239,213 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://asami2d1.github.io/2019/05/28/duality-principle/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yuan Yu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://s2.ax1x.com/2019/05/13/E4G8w8.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Not Even Weak">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/28/duality-principle/" itemprop="url">射影几何与范畴论中的对偶原理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-28T00:51:00+08:00">
+                2019-05-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/28/duality-principle/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/28/duality-principle/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近接触到一点范畴论的内容, 范畴论里有个很有意思的东西叫"对偶原理"(duality principle), 熟悉射影几何的同学应该知道射影几何里也有一个对偶原理(其实线性代数里也有所谓对偶原理, 不过我第一时间想到的是射影几何里的那个), 查了一些资料之后, 发现这两个对偶原理有很强的联系, 所以稍微整理后写了这篇笔记.</p>
+<h3 id="射影几何中的对偶原理">射影几何中的对偶原理</h3>
+<p>射影平面上的对偶原理是广为人知的, 这里以丘维声《解析几何》中的描述为代表:</p>
+<blockquote>
+<p><strong>射影平面上的对偶原理</strong> 射影平面上, 如果一个图解命题<span class="math inline">\(\phi(Point, Line)\)</span>是一条定理, 则它的对偶命题<span class="math inline">\(\phi(Line, Point)\)</span>也可以证明是一条定理.</p>
+</blockquote>
+<p>类似的, 对于一般的<span class="math inline">\(n\)</span>维射影空间<span class="math inline">\(PG(n, \mathbb F)\)</span>, <span class="math inline">\(\mathbb F\)</span>是一个域, <span class="math inline">\(r\)</span>维子空间与<span class="math inline">\(n-r-1\)</span>维子空间互为对偶, 可以得出相应的<span class="math inline">\(n\)</span>维射影空间<span class="math inline">\(PG(n, \mathbb F)\)</span>上的对偶原理.</p>
+<h3 id="范畴论中的对偶原理">范畴论中的对偶原理</h3>
+<p>范畴论中的对偶原理和反范畴的概念紧密相关, 反范畴的定义如下:</p>
+<p>对于任意范畴<span class="math inline">\(\mathcal{C}\)</span>, 其反范畴<span class="math inline">\(\mathcal{C}^{op}\)</span>定义如下:</p>
+<ul>
+<li>对象集: <span class="math inline">\(\mathrm{Ob} (\mathcal{C}^{op}) = \mathrm{Ob} (\mathcal{C})\)</span>;</li>
+<li>态射集: <span class="math inline">\(\forall X, Y,\mathrm{Hom}_{ \mathcal{C}^{op} }(X,Y) = \mathrm{Hom}_{ \mathcal{C} }(Y, X)\)</span>;</li>
+<li>态射<span class="math inline">\(f \in \mathrm{Hom}_{\mathcal{C}^{op}}(Y, Z), g \in \mathrm{Hom}_{\mathcal{C}^{op}}(X, Y)\)</span>的合成<span class="math inline">\(f\circ^{op}g\)</span> 定义为<span class="math inline">\(\mathcal C\)</span> 中反向合成 <span class="math inline">\(g \circ f;\)</span></li>
+<li>恒同态射同<span class="math inline">\(\mathcal{C}\)</span></li>
+</ul>
+<p>容易验证, <span class="math inline">\(\mathcal{C}^{op}\)</span>是一个范畴, 且<span class="math inline">\((\mathcal{C}^{op})^{op} = \mathcal{C}\)</span>. 简而言之, 将一个范畴的箭头全部反转, 就得到了它的反范畴.</p>
+<p>对于某个对象<span class="math inline">\(A\in \mathcal C\)</span>, 由于<span class="math inline">\(\mathrm{Ob}(\mathcal{C}^{op}) = \mathrm{Ob}(\mathcal{C})\)</span>, 因此<span class="math inline">\(\mathcal{C}^{op}\)</span>中也有相同的对象<span class="math inline">\(A\)</span>, 记为<span class="math inline">\(A^{op}\)</span>. 同样, 对于态射集<span class="math inline">\(\mathrm{Hom}_{\mathcal{C}^{op}}(A^{op}, B^{op})\)</span>记范畴<span class="math inline">\(\mathcal{C}\)</span> 中态射<span class="math inline">\(f\)</span> 对应的态射为<span class="math inline">\(f^{op}\)</span>. 在范畴<span class="math inline">\(\mathcal C\)</span>和<span class="math inline">\(\mathcal{C}^{op}\)</span>之间有对偶函子<span class="math inline">\(F\)</span>, 满足<span class="math inline">\(F(A) = A^{op},\ F(f) = f^{op},\ F(f \circ g) = g \circ f\)</span>.</p>
+<p>由于反转箭头后范畴论诸公理仍然成立, 因此范畴<span class="math inline">\(\mathcal C\)</span>中一条关于<span class="math inline">\(\mathrm{Ob}(\mathcal{C})\)</span>和<span class="math inline">\(\mathrm{Mor}(\mathcal{C})\)</span>的性质<span class="math inline">\(S\)</span>, 在对偶函子<span class="math inline">\(F\)</span>作用下, 将对象<span class="math inline">\(A\)</span>, 态射<span class="math inline">\(f\)</span> 替换为<span class="math inline">\(F(A),\ F(f)\)</span>后的性质仍然成立, 记为<span class="math inline">\(S^{op}\)</span>, <span class="math inline">\(S^{op}\)</span>是<span class="math inline">\(\mathcal{C}^{op}\)</span>的一条性质. 这就是范畴论中的对偶原理.</p>
+<h3 id="两个对偶原理的联系">两个对偶原理的联系</h3>
+<p>为了阐明射影几何的对偶原理背后的范畴论背景, 我们首先要建立起射影几何范畴的概念. 在此之前, 我们先给出一些之后会用到的关于<span class="math inline">\(n\)</span> 维射影几何的概念, 如果读者预先已经对此有所了解, 可以跳过这些内容.</p>
+<h4 id="n维射影空间与n维射影几何">n维射影空间与n维射影几何</h4>
+<p><strong>定义1</strong> 设<span class="math inline">\(V^{n+1}\)</span>是域<span class="math inline">\(\mathbb F\)</span>上的一个<span class="math inline">\(n+1\)</span>维线性空间, <span class="math inline">\(V^{n+1}\)</span>的全体非零向量构成的集合是一个<strong><span class="math inline">\(n\)</span>维射影空间</strong>, 记为<span class="math inline">\(P^n\)</span>. 设<span class="math inline">\(v \in V^{n+1},\ v \neq 0,\ k\in \mathbb F,\ k \neq 0\)</span>, <span class="math inline">\(kv\)</span>与<span class="math inline">\(v\)</span>表示<span class="math inline">\(P^n\)</span>中的同一个点.</p>
+<p><strong>定义2</strong> 设<span class="math inline">\(M\)</span>是<span class="math inline">\(V^{n+1}\)</span>的一个非零子空间, 则<span class="math inline">\(M\)</span>的非零向量的集合<span class="math inline">\(M_P\)</span>是<span class="math inline">\(P^n\)</span>的<strong>子空间</strong>.</p>
+<p><strong>定义3</strong> <span class="math inline">\(P^n\)</span>及其子空间的<strong>维数</strong>记为<span class="math inline">\(\mathrm{Pdim}\)</span>, <span class="math inline">\(\mathrm{Pdim} P^n = \dim V^{n+1}-1\)</span>, <span class="math inline">\(\mathrm{Pdim} M_P = \dim M - 1\)</span>. 规定<span class="math inline">\(\mathrm{Pdim}\{0\} = -1\)</span>. 0, 1, 2维的子空间分别称为<strong>点</strong>, <strong>直线</strong>和<strong>平面</strong>, <span class="math inline">\(P^n\)</span> 中<span class="math inline">\(n-1\)</span>维子空间称为<span class="math inline">\(n-1\)</span>维<strong>超平面</strong>.</p>
+<p><strong>定义4</strong> 定义<span class="math inline">\(P^n\)</span>的子空间<span class="math inline">\(M_P, N_P\)</span>的<strong>和</strong>与<strong>交</strong>为<span class="math inline">\(M_P + N_P = (M+N)_P,\ M_P \cap N_P = (M \cap N)_P\)</span>.</p>
+<p><strong>定义5</strong> 记<span class="math inline">\(\mathscr{P}(P^n)\)</span>为<span class="math inline">\(P^n\)</span>的全体子空间的集合, 称<span class="math inline">\(\mathscr{P}(P^n)\)</span>是<span class="math inline">\(V^{n+1}\)</span>上的一个<strong><span class="math inline">\(n\)</span>维射影几何</strong>.</p>
+<h4 id="射影几何范畴">射影几何范畴</h4>
+<p><strong>定义6</strong> 射影几何范畴<span class="math inline">\(\mathbf{Prg}(P^n)\)</span>构造如下:</p>
+<ul>
+<li>设<span class="math inline">\(P^n\)</span>是一个<span class="math inline">\(n\)</span>维射影空间, <span class="math inline">\(\mathbf{Prg}(P^n)\)</span>以<span class="math inline">\(P^n\)</span>的子空间为对象, <span class="math inline">\(\mathrm{Ob}(\mathbf{Prg}(P^n)) = \mathscr{P}(P^n)\)</span>.</li>
+<li>规定<span class="math inline">\(\mathrm{Hom}(M_P, N_P)=\{f_{MN}\}\)</span>是一个单点集, 如果<span class="math inline">\(M_P \subseteq N_P\)</span>, <span class="math inline">\(\mathrm{Hom}(M_P, N_P)=\varnothing\)</span>, 如果<span class="math inline">\(M_P \nsubseteq N_P\)</span>. 全体态射组成<span class="math inline">\(\mathbf{Prg}(P^n)\)</span>的态射集<span class="math inline">\(\mathrm{Mor}(\mathbf{Prg}(P^n))\)</span>.</li>
+<li>对于每个<span class="math inline">\(M_P \in \mathrm{Ob}(\mathbf{Prg}(P^n))\)</span>规定<span class="math inline">\(\mathrm{Hom}(M_P, M_P)=\{\mathrm{id}_M\}\)</span> 是由<span class="math inline">\(M_P\)</span>上恒等态射组成的单点集.</li>
+<li>对于任意<span class="math inline">\(M_P\subseteq N_P \subseteq Q_P\)</span>, 定义合成映射 <span class="math inline">\(\circ\)</span> 使得<span class="math inline">\(f_{NQ} \circ f_{MN} = f_{MQ}\)</span>, 对于不满足这一条件的子空间不存在态射<span class="math inline">\(f_{MQ}\)</span>, 故这一定义给出了所有可能的态射的合成.</li>
+</ul>
+<p>下面我们利用范畴论的对偶原理证明射影几何的对偶原理, 这里的证明来自于这篇论文<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, 这里修改了部分记法和符号, 并且改正了几个印刷错误, 某些细节有所调整.</p>
+<p><strong>命题1</strong> 设<span class="math inline">\(M_P \in \mathrm{Ob}(\mathbf{Prg}(P^n))\)</span>, 则<span class="math inline">\(\mathrm{Pdim}M_P=n-1-\mathrm{Pdim}M_P^{op}\)</span>.</p>
+<p><strong>证明: </strong></p>
+<p>设<span class="math inline">\(M_P\)</span>是<span class="math inline">\(V^{n+1}\)</span>的<span class="math inline">\(r\)</span>维子空间, <span class="math inline">\(M_P = \mathrm{span}\{m_1, \cdots, m_r\},\ m_1, \cdots, m_r\)</span>是<span class="math inline">\(M_P\)</span>的一组基.</p>
+<p>将<span class="math inline">\(\{m_1, \cdots, m_r\}\)</span>扩充为<span class="math inline">\(V^{n+1}\)</span>的一组基<span class="math inline">\(\{m_1, \cdots, m_r, m_{r+1}, \cdots, m_{n+1}\}\)</span> , 并且令<span class="math inline">\(M_P^i = \mathrm{span}\{m_1, \cdots, m_i\},\ i=1,2,\cdots, n+1,\ M_P^0 = \{0\}\)</span> .</p>
+<p><span class="math inline">\(M_P^i\)</span>是<span class="math inline">\(P^n\)</span>的一个<span class="math inline">\(i-1\)</span>维子空间, 并且有链 <span class="math display">\[
+\{0\}_P = M_P^0 \subseteq M_P^1 \subseteq M_P^2 \subseteq \cdots \subseteq M_P^n \subseteq M_P^{n+1} = P^n.
+\]</span> 如前所述, 反范畴是将范畴的所有箭头反转得到的, 因此对链中的每个对象施加对偶算子后我们有: <span class="math display">\[
+\{0\}_P^{op} \supseteq M_P^0 \supseteq (M_P^1)^{op} \supseteq (M_P^2)^{op} \supseteq \cdots \supseteq (M_P^n)^{op} \supseteq (M_P^{n+1})^{op} \supseteq (P^n)^{op}.
+\]</span></p>
+<p>当<span class="math inline">\(i &lt; j\)</span>时, <span class="math inline">\(M_P^i \subsetneqq M_P^j\)</span>, 于是<span class="math inline">\((M_P^i)^{op} \supsetneqq (M_P^j)^{op}\)</span>. 又由于<span class="math inline">\(-1 \leq \mathrm{Pdim} (M_P^j)^{op} &lt; \mathrm{Pdim} (M_P^i)^{op} \leq n\)</span>, 可得<span class="math inline">\(\mathrm{Pdim}\ (M_P^i)^{op} = n - i\)</span>.</p>
+<p>又由于<span class="math inline">\(\mathrm{Pdim} M_P^i = i - 1\)</span>. 代入上式可得<span class="math inline">\(\mathrm{Pdim}M_P=n-1-\mathrm{Pdim}M_P^{op}\)</span>. <span class="math inline">\(\Box\)</span></p>
+<p><strong>命题2</strong> 在范畴<span class="math inline">\(\mathbf{Prg}(P^n)\)</span> 中<span class="math inline">\(+,\ \cap\)</span>两者互为对偶.</p>
+<p><strong>证明:</strong></p>
+<p>任取<span class="math inline">\(M_P, N_P \in \mathrm{Ob}(\mathbf{Prg}(P^n))\)</span>由于<span class="math inline">\((\mathcal{C}^{op})^{op}=\mathcal{C}\)</span>, 命题等价于证明<span class="math inline">\((M_P \cap N_P)^{op} = M_P^{op} + N_P^{op}\)</span>且<span class="math inline">\((M_P + N_P)^{op} = M_P^{op} \cap N_P^{op}\)</span>.</p>
+<p>因为<span class="math inline">\(M_P \cap N_P \subseteq M_P\)</span>, 且<span class="math inline">\(M_P \cap N_P \subseteq N_P\)</span>, 于是<span class="math inline">\((M_P \cap N_P)^{op} \supseteq M_P^{op}\)</span>, 且<span class="math inline">\((M_P \cap N_P)^{op} \supseteq N_P^{op}\)</span>, 故而有<span class="math inline">\(M_P^{op} + N_P^{op} \subseteq (M_P \cap N_P)^{op}\)</span>.</p>
+<p>因为<span class="math inline">\(M_P^{op} \subseteq M_P^{op} + N_P^{op}\)</span>且<span class="math inline">\(N_P^{op} \subseteq M_P^{op} + N_P^{op}\)</span>, 于是<span class="math inline">\(M_P \supseteq (M_P^{op} + N_P^{op})^{op}\)</span>且<span class="math inline">\(N_P \supseteq (M_P^{op} + N_P^{op})^{op}\)</span>, 故而有<span class="math inline">\((M_P^{op} + N_P^{op})^{op} \subseteq M_P \cap N_P\)</span>, <span class="math inline">\((M_P \cap N_P)^{op} \subseteq M_P^{op} + N_P^{op}\)</span>, 所以<span class="math inline">\((M_P \cap N_P)^{op} = M_P^{op} + N_P^{op}\)</span>.</p>
+<p>于是<span class="math inline">\((M_P^{op} \cap N_P^{op})^{op} = (M_P^{op})^{op} + (N_P^{op})^{op} = M_P + N_P\)</span>, 所以<span class="math inline">\((M_P + N_P)^{op} = M_P^{op} \cap N_P^{op}\)</span>. 命题得证.<span class="math inline">\(\Box\)</span></p>
+<p>对于某个<span class="math inline">\(n\)</span>维射影空间里的图解命题, 通过将命题中的<span class="math inline">\(M \subseteq N,\ \cap,\ +\)</span> 替换为对偶元素<span class="math inline">\(N^{op} \subseteq M^{op},\ +,\ \cap\)</span>就可以得到对偶命题, 由命题2和范畴论中的对偶原理, 可以以得出对偶命题的正确性. 此外, 对于某个确定的射影几何范畴<span class="math inline">\(\mathbf{Prg}(P^n)\)</span>, 由命题1可知<span class="math inline">\(r\)</span>维子空间<span class="math inline">\(M\)</span>的对偶的维数为<span class="math inline">\(n-r-1\)</span>. 由这两点可知, 上述<span class="math inline">\(n\)</span>维射影空间<span class="math inline">\(PG(n, \mathbb F)\)</span>上的对偶原理成立.</p>
+<h3 id="附记">附记</h3>
+<p>实际上, 利用线性空间的对偶原理也可以得出射影几何中的对偶原理, 或者说这几个名字相同的原理本质上是一回事. 之所以这里选择从范畴论的角度而不是线性代数的角度考虑问题, 是因为线性代数中的对偶原理也是反范畴的对偶原理的结果<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, 因此我就索性从最底层出发了. 关于一般线性空间的对偶有机会还会再写一篇笔记.</p>
+<p>参考文献:</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1" role="doc-endnote"><p>李桃生, 卞松元. 论对偶原理[J]. 华中师范大学学报(自然科学版), 1987(4):4-8.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩</a></p></li>
+<li id="fn2" role="doc-endnote"><p>李文威. 代数学方法.第一卷, 基础架构[M]. 北京: 高等教育出版社, 2019.1.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩</a></p></li>
+</ol>
+</section>
+
+      <script>
+        window.disqusProxy={
+          shortname: 'not-even-weak',
+          username: 'Closure21',
+          server: '45.77.22.101',
+          port: 5509,
+          adminAvatar: '/avatars/admin-avatar.jpg',
+          identifier: '2019/05/28/duality-principle/',
+        };
+        window.disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = window.disqusProxy.identifier;
+        };
+      </script>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://asami2d1.github.io/2019/05/13/Real-number/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -320,7 +527,8 @@
       
         
           
-            <h2 id="实数系">实数系</h2>
+            <p>内容基本来自于本学期集合论导引课程的笔记, 部分内容参考了<em>Baby Rudin</em>.</p>
+<h2 id="实数系">实数系</h2>
 <p>本节试图给出实数系的定义, 以此作为微积分学的基础.</p>
 <h3 id="有序集">有序集</h3>
 <h4 id="序关系">序关系</h4>
@@ -328,7 +536,7 @@
 <p>设<span class="math inline">\(S\)</span>是一个集合, <span class="math inline">\(S\)</span>上的序关系<span class="math inline">\(\le\)</span>是一种关系, 满足:</p>
 <ol type="1">
 <li><strong>自反性</strong>: <span class="math inline">\(\forall x\in S, x\le x\)</span>.</li>
-<li><strong>反对称性</strong>: $x,yS, <span class="math inline">\(如果\)</span>xy<span class="math inline">\(且\)</span>yx<span class="math inline">\(, 则\)</span>x=y$.</li>
+<li><strong>反对称性</strong>: <span class="math inline">\(\forall x,y \in S\)</span>, 如果<span class="math inline">\(x \le y\)</span>且<span class="math inline">\(y \le x\)</span>, 则<span class="math inline">\(x=y\)</span>.</li>
 <li><strong>传递性</strong>: <span class="math inline">\(\forall x,y,z\in S\)</span>, 如果<span class="math inline">\(x\le y, y\le z\)</span>, 则<span class="math inline">\(x\le z\)</span>.</li>
 </ol>
 <p>若<span class="math inline">\(x\le y\)</span> 且<span class="math inline">\(x \ne y\)</span>, 则记为<span class="math inline">\(x&lt;y\)</span>. <span class="math inline">\(&lt;\)</span>满足传递性不满足自反性和反对称性.</p>
@@ -747,7 +955,7 @@ A = \bigcap_{n \in M}n.
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -760,7 +968,7 @@ A = \bigcap_{n \in M}n.
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
