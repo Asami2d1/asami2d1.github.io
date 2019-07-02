@@ -96,17 +96,18 @@
 
 
 
-  <meta name="description" content="主要写笔记，偶尔会写一下杂七杂八的东西。                 window.disqusProxy={           shortname: &apos;not-even-weak&apos;,           username: &apos;Closure21&apos;,           server: &apos;45.77.22.101&apos;,           port: 5509,           admi">
+  <meta name="description" content="本文是关于Hilbert空间和Banach空间的第一篇笔记(应该还会有更多的), 介绍这两种空间的定义并给出几个常见的例子. 内积空间和赋范线性空间 内积空间的定义 复线性空间\(H\) 称为内积空间 (酉空间),如果对任意向量\(x,y\in H\) 的每个序对都对应一个复数\(\langle x,y \rangle\),满足如下内积公理：  对第一个元素线性：\(\langle \a">
+<meta name="keywords" content="数学,线性代数,泛函分析,笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于本站">
-<meta property="og:url" content="https://asami2d1.github.io/2019/05/12/关于本站/index.html">
+<meta property="og:title" content="Hilbert空间和Banach空间(1)">
+<meta property="og:url" content="https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/index.html">
 <meta property="og:site_name" content="Not Even Weak">
-<meta property="og:description" content="主要写笔记，偶尔会写一下杂七杂八的东西。                 window.disqusProxy={           shortname: &apos;not-even-weak&apos;,           username: &apos;Closure21&apos;,           server: &apos;45.77.22.101&apos;,           port: 5509,           admi">
+<meta property="og:description" content="本文是关于Hilbert空间和Banach空间的第一篇笔记(应该还会有更多的), 介绍这两种空间的定义并给出几个常见的例子. 内积空间和赋范线性空间 内积空间的定义 复线性空间\(H\) 称为内积空间 (酉空间),如果对任意向量\(x,y\in H\) 的每个序对都对应一个复数\(\langle x,y \rangle\),满足如下内积公理：  对第一个元素线性：\(\langle \a">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-12T12:44:46.233Z">
+<meta property="og:updated_time" content="2019-07-02T17:59:17.164Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于本站">
-<meta name="twitter:description" content="主要写笔记，偶尔会写一下杂七杂八的东西。                 window.disqusProxy={           shortname: &apos;not-even-weak&apos;,           username: &apos;Closure21&apos;,           server: &apos;45.77.22.101&apos;,           port: 5509,           admi">
+<meta name="twitter:title" content="Hilbert空间和Banach空间(1)">
+<meta name="twitter:description" content="本文是关于Hilbert空间和Banach空间的第一篇笔记(应该还会有更多的), 介绍这两种空间的定义并给出几个常见的例子. 内积空间和赋范线性空间 内积空间的定义 复线性空间\(H\) 称为内积空间 (酉空间),如果对任意向量\(x,y\in H\) 的每个序对都对应一个复数\(\langle x,y \rangle\),满足如下内积公理：  对第一个元素线性：\(\langle \a">
 
 
 
@@ -114,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="https://asami2d1.github.io/2019/05/12/关于本站/">
+  <link rel="canonical" href="https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/">
 
 
 
@@ -124,7 +125,7 @@
   };
 </script>
 
-  <title>关于本站 | Not Even Weak</title>
+  <title>Hilbert空间和Banach空间(1) | Not Even Weak</title>
   
 
 
@@ -334,7 +335,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://asami2d1.github.io/2019/05/12/关于本站/">
+    <link itemprop="mainEntityOfPage" href="https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yuan Yu">
@@ -351,7 +352,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">关于本站
+          <h1 class="post-title" itemprop="name headline">Hilbert空间和Banach空间(1)
 
               
             
@@ -377,9 +378,25 @@
                 
               
 
-              <time title="创建时间：2019-05-12 20:44:46" itemprop="dateCreated datePublished" datetime="2019-05-12T20:44:46+08:00">2019-05-12</time>
+              <time title="创建时间：2019-07-02 23:56:39" itemprop="dateCreated datePublished" datetime="2019-07-02T23:56:39+08:00">2019-07-02</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-03 01:59:17" itemprop="dateModified" datetime="2019-07-03T01:59:17+08:00">2019-07-03</time>
+              
             
           </span>
 
@@ -396,8 +413,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/05/12/关于本站/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/12/关于本站/" itemprop="commentCount"></span>
+                <a href="/2019/07/02/Hilbert-space-and-Banach-space/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/02/Hilbert-space-and-Banach-space/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -425,7 +442,80 @@
       
 
       
-        <p>主要写笔记，偶尔会写一下杂七杂八的东西。</p>
+        <p>本文是关于Hilbert空间和Banach空间的第一篇笔记(应该还会有更多的), 介绍这两种空间的定义并给出几个常见的例子.</p>
+<h2 id="内积空间和赋范线性空间">内积空间和赋范线性空间</h2>
+<h3 id="内积空间的定义">内积空间的定义</h3>
+<p>复线性空间<span class="math inline">\(H\)</span> 称为<em>内积空间 (酉空间)</em>,如果对任意向量<span class="math inline">\(x,y\in H\)</span> 的每个序对都对应一个复数<span class="math inline">\(\langle x,y \rangle\)</span>,满足如下内积公理：</p>
+<ol type="1">
+<li>对第一个元素线性：<span class="math inline">\(\langle \alpha x_1+\beta x_2, y \rangle = \alpha \langle x_1,y \rangle + \beta \langle x_2, y \rangle \quad \forall x_1, x_2, y \in H\)</span>.即对于给定的<span class="math inline">\(y\)</span>，<span class="math inline">\(x \mapsto \langle x, y \rangle\)</span>是一个线性泛函.</li>
+<li>共轭对称性：<span class="math inline">\(\langle x, y \rangle = \overline{\langle y, x \rangle}\)</span>.</li>
+<li>正定性：<span class="math inline">\(\forall x \in H,\ \langle x, x \rangle \geq 0\)</span>并且<span class="math inline">\(\langle x, x \rangle = 0 \Leftrightarrow x=0\)</span>.</li>
+</ol>
+<p>推论：</p>
+<ol type="1">
+<li><span class="math inline">\(\forall y\in H, \langle0, y\rangle = 0\)</span>.</li>
+<li><span class="math inline">\(\langle x, ay \rangle = \overline a \langle x, y \rangle\)</span>.</li>
+<li><span class="math inline">\(\langle x, y+z \rangle = \langle x, y \rangle + \langle x, z \rangle\)</span>.</li>
+</ol>
+<h3 id="赋范线性空间的定义">赋范线性空间的定义</h3>
+<p>复线性空间<span class="math inline">\(X\)</span>是称为<em>赋范线性空间</em> ,如果对于任意<span class="math inline">\(x \in X\)</span>, 存在非负实数<span class="math inline">\(\|x\|\)</span>, 称为<span class="math inline">\(x\)</span>的范数, 满足如下范数公理:</p>
+<ol type="1">
+<li><span class="math inline">\(\forall x,y \in X,\ \|x+y\| \leq \|x\| + \|y\|\)</span>.</li>
+<li>若<span class="math inline">\(x\in X\)</span>, <span class="math inline">\(k\)</span>为标量, 则<span class="math inline">\(\|kx \| = |k|\cdot\|x\|\)</span>.</li>
+<li><span class="math inline">\(\|x\|=0 \Rightarrow x=0\)</span>.</li>
+</ol>
+<h3 id="内积诱导的范数">内积诱导的范数</h3>
+<p>对于内积空间<span class="math inline">\(H\)</span>, 可以定义范数<span class="math inline">\(\|x\|=\sqrt{\langle x, x \rangle}\)</span>. 由于内积的性质, 它满足范数公理.</p>
+<p>证明:</p>
+<p>先证明, 对于如上定义的范数<span class="math inline">\(\|x\|\)</span>, Cauchy-Schwarz 不等式 <span class="math inline">\(|\langle x, y \rangle| \leq \|x\| \|y\|\)</span> 成立:</p>
+<p>令<span class="math inline">\(A=\|x\|^2,\ B=|\langle x, y \rangle|,\ C=\|y\|^2\)</span>, 于是存在<span class="math inline">\(\alpha \in \mathbb{C},\ |\alpha|=1\)</span>， 使得<span class="math inline">\(\alpha \langle y, x \rangle = B\)</span>. 对于任意实数<span class="math inline">\(r\)</span>就有 <span class="math display">\[
+\begin{align}
+\langle x - r\alpha y, x - r\alpha y \rangle &amp;= \langle x, x-r\alpha y \rangle - r \alpha \langle y, x-r\alpha y \rangle \\
+&amp;=\langle x, x \rangle -r\overline{\alpha} \langle x, y \rangle - r\alpha\langle y, x \rangle + r^2\langle y, y \rangle \\
+&amp;= A - 2Br + Cr^2.
+\end{align}
+\]</span> 由于<span class="math inline">\(\langle x - r\alpha y, x - r\alpha y \rangle \geq 0\)</span>恒成立, 并且有<span class="math inline">\(C \geq 0\)</span>, 于是关于<span class="math inline">\(r\)</span>的二次多项式<span class="math inline">\(A - 2Br + Cr^2\)</span>满足<span class="math inline">\(B^2-AC\leq0\)</span>, 即 <span class="math display">\[
+|\langle x, y \rangle|^2 \leq \|x\|\|y\|
+\]</span> 由Cauchy-Schwarz 不等式有 <span class="math display">\[
+\begin{align}
+\|x+y\|^2 &amp;= \langle x+y, x+y \rangle \\
+          &amp;= \langle x, x \rangle + \langle x, y \rangle +\langle y, x \rangle + \langle y, y \rangle \\
+          &amp;\leq \|x\|^2 + 2\|x\|\ \|y\| + \|y\|^2 \\
+          &amp;= (\|x\|+\|y\|)^2
+\end{align}
+\]</span> 满足范数公理 1.</p>
+<p>由于 <span class="math display">\[
+\begin{align}
+\|kx\|^2&amp;=\langle kx, kx \rangle \\
+&amp;= k\overline{k}\langle x, x\rangle \\
+&amp;= |k|^2\|x\|^2
+\end{align}
+\]</span> 于是<span class="math inline">\(\|kx \| = |k|\cdot\|x\|\)</span>, 满足范数公理 2.</p>
+<p>由于内积的正定性, 范数公理 3自然成立. 因此<span class="math inline">\(\|x\|=\sqrt{\langle x, x \rangle}\)</span>符合范数的定义, 称为内积诱导的范数. <span class="math inline">\(\Box\)</span></p>
+<p>由此我们可知内积空间都是赋范空间.</p>
+<h3 id="内积空间与赋范线性空间上的度量与完备性">内积空间与赋范线性空间上的度量与完备性</h3>
+<p>对于任意赋范线性空间<span class="math inline">\(X\)</span>, 可以定义度量函数<span class="math inline">\(d(x, y) = \|x-y\|\)</span>, 由不等式<span class="math inline">\(\|x+y\| \leq \|x\| + \|y\|\)</span>可知三角不等式<span class="math inline">\(d(x,z) \leq d(x,y) + d(y, z)\)</span>成立, 于是在上述度量函数下, 赋范线性空间<span class="math inline">\(X\)</span>构成一个度量空间. 如果这个度量空间是<em>完备的</em>, 即<span class="math inline">\((X,d)\)</span>内每个Cauchy列都是收敛的, 我们就称赋范线性空间<span class="math inline">\(X\)</span>是完备的.</p>
+<p>对于内积空间<span class="math inline">\(H\)</span>, 如果在它的内积诱导的范数的意义下的赋范线性空间的按上述方法定义的度量空间是完备的, 那么我们称内积空间<span class="math inline">\(H\)</span>是完备的.</p>
+<h2 id="hilbert空间和banach空间">Hilbert空间和Banach空间</h2>
+<h3 id="定义">定义</h3>
+<p>完备的内积空间称为Hilbert空间.</p>
+<p>完备的赋范线性空间称为Banach空间.</p>
+<h3 id="例子">例子</h3>
+<ul>
+<li><p>(Euclid空间) 复线性空间<span class="math inline">\(\mathbb{C}^n=\{(\xi_1,\dots,\xi_n)|\xi_i\in\mathbb{C}, i=1,\dots,n\}\)</span>, 对于<span class="math inline">\(x=(\xi_1, \dots, \xi_n)\in\mathbb{C}^n\)</span>和<span class="math inline">\(y=(\eta_1,\dots,\eta_n)\in\mathbb{C}^n\)</span>定义内积<span class="math inline">\(\langle x, y \rangle= \sum\limits_{i=1}^n{\xi_i\overline{\eta_i}}\)</span>, 则<span class="math inline">\(\mathbb{C}^n\)</span>称为一个Hilbert空间.</p></li>
+<li><p>(Hilbert序列空间) 任意集合<span class="math inline">\(B\)</span>上的序列空间<span class="math inline">\(\ell^2(B)=\biggl\{x:B\to\mathbb{C}\biggl|\sum\limits_{b\in B}|x(b)|^2 &lt; \infty\biggr\}\)</span>在内积 <span class="math display">\[
+\langle x,y \rangle = \sum\limits_{b\in B}x(b)\overline{y(b)}
+\]</span> 意义下成为Hilbert空间</p></li>
+<li><p>(Lebesgue空间) 若<span class="math inline">\(\mu\)</span>是一个正测度, 那么<span class="math inline">\(L^2(\mu)\)</span>将是一个具有内积 <span class="math display">\[
+\langle f, g\rangle = \int_X{f\overline{g}\ d\mu}
+\]</span> 的Hilbert空间.</p>
+<p>同时<span class="math inline">\(L^2(\mu)\)</span>也是一个具有范数 <span class="math display">\[
+\|f\|=\biggl\{\int_X{|f|^2\ d\mu}\biggr\}^\frac{1}{2}
+\]</span> 的Banach空间.</p></li>
+<li><p>(反例——非Hilbert空间的内积空间) <span class="math inline">\([0,1]\)</span>上全体连续复函数构成的线性空间在内积 <span class="math display">\[
+\langle f, g \rangle = \int_0^1{f(t)\overline{g(t)}\ dt}
+\]</span> 意义下是内积空间但不是Hilbert空间</p></li>
+</ul>
 
       <script>
         window.disqusProxy={
@@ -434,7 +524,7 @@
           server: '45.77.22.101',
           port: 5509,
           adminAvatar: '/avatars/admin-avatar.jpg',
-          identifier: '2019/05/12/关于本站/',
+          identifier: '2019/07/02/Hilbert-space-and-Banach-space/',
         };
         window.disqus_config = function () {
           this.page.url = window.location.href;
@@ -474,7 +564,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://asami2d1.github.io/2019/05/12/关于本站/" title="关于本站">https://asami2d1.github.io/2019/05/12/关于本站/</a>
+    <a href="https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/" title="Hilbert空间和Banach空间(1)">https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -485,6 +575,18 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/数学/" rel="tag"># 数学</a>
+          
+            <a href="/tags/线性代数/" rel="tag"># 线性代数</a>
+          
+            <a href="/tags/泛函分析/" rel="tag"># 泛函分析</a>
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+        </div>
+      
 
       
       
@@ -494,15 +596,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/05/28/duality-principle/" rel="next" title="射影几何与范畴论中的对偶原理">
+                <i class="fa fa-chevron-left"></i> 射影几何与范畴论中的对偶原理
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/13/Real-number/" rel="prev" title="【未完】实数系的建立">
-                【未完】实数系的建立 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -559,8 +661,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -683,6 +794,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#内积空间和赋范线性空间"><span class="nav-number">1.</span> <span class="nav-text">内积空间和赋范线性空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内积空间的定义"><span class="nav-number">1.1.</span> <span class="nav-text">内积空间的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#赋范线性空间的定义"><span class="nav-number">1.2.</span> <span class="nav-text">赋范线性空间的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内积诱导的范数"><span class="nav-number">1.3.</span> <span class="nav-text">内积诱导的范数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内积空间与赋范线性空间上的度量与完备性"><span class="nav-number">1.4.</span> <span class="nav-text">内积空间与赋范线性空间上的度量与完备性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hilbert空间和banach空间"><span class="nav-number">2.</span> <span class="nav-text">Hilbert空间和Banach空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义"><span class="nav-number">2.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例子"><span class="nav-number">2.2.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -837,9 +965,9 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "https://asami2d1.github.io/2019/05/12/关于本站/";
-    this.page.identifier = "2019/05/12/关于本站/";
-    this.page.title = '关于本站';
+    this.page.url = "https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/";
+    this.page.identifier = "2019/07/02/Hilbert-space-and-Banach-space/";
+    this.page.title = 'Hilbert空间和Banach空间(1)';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
@@ -892,6 +1020,46 @@
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
   
 
 
