@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="本文是线性代数进阶系列的第二篇笔记, 介绍这两种定义了特殊结构(内积和范数)的线性空间空间的定义并给出几个常见的例子. 内积空间和赋范线性空间 内积空间的定义 复线性空间\(H\) 称为内积空间 (酉空间),如果对任意向量\(x,y\in H\) 的每个序对都对应一个复数\(\langle x,y \rangle\),满足如下内积公理：  对第一个元素线性：\(\langle \alph">
+  <meta name="description" content="本文是线性代数进阶系列的第一篇, 这一系列的笔记都是基于华东师大计算机系线性代数进阶的暑期课程内容写成的, 但是在内容上并不拘泥于课程内容, 总原课程基础上删去和补充了一部分内容. 本文主要回顾一下线性代数课程中与线性空间相关的若干基本概念.">
 <meta name="keywords" content="数学,线性代数,矩阵分析,笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="线性代数进阶2——Hilbert空间和Banach空间">
-<meta property="og:url" content="https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/index.html">
+<meta property="og:title" content="线性代数进阶1——线性空间">
+<meta property="og:url" content="https://asami2d1.github.io/2019/07/01/Linear-space/index.html">
 <meta property="og:site_name" content="Not Even Weak">
-<meta property="og:description" content="本文是线性代数进阶系列的第二篇笔记, 介绍这两种定义了特殊结构(内积和范数)的线性空间空间的定义并给出几个常见的例子. 内积空间和赋范线性空间 内积空间的定义 复线性空间\(H\) 称为内积空间 (酉空间),如果对任意向量\(x,y\in H\) 的每个序对都对应一个复数\(\langle x,y \rangle\),满足如下内积公理：  对第一个元素线性：\(\langle \alph">
+<meta property="og:description" content="本文是线性代数进阶系列的第一篇, 这一系列的笔记都是基于华东师大计算机系线性代数进阶的暑期课程内容写成的, 但是在内容上并不拘泥于课程内容, 总原课程基础上删去和补充了一部分内容. 本文主要回顾一下线性代数课程中与线性空间相关的若干基本概念.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-13T07:50:23.999Z">
+<meta property="og:updated_time" content="2019-07-13T13:49:14.791Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="线性代数进阶2——Hilbert空间和Banach空间">
-<meta name="twitter:description" content="本文是线性代数进阶系列的第二篇笔记, 介绍这两种定义了特殊结构(内积和范数)的线性空间空间的定义并给出几个常见的例子. 内积空间和赋范线性空间 内积空间的定义 复线性空间\(H\) 称为内积空间 (酉空间),如果对任意向量\(x,y\in H\) 的每个序对都对应一个复数\(\langle x,y \rangle\),满足如下内积公理：  对第一个元素线性：\(\langle \alph">
+<meta name="twitter:title" content="线性代数进阶1——线性空间">
+<meta name="twitter:description" content="本文是线性代数进阶系列的第一篇, 这一系列的笔记都是基于华东师大计算机系线性代数进阶的暑期课程内容写成的, 但是在内容上并不拘泥于课程内容, 总原课程基础上删去和补充了一部分内容. 本文主要回顾一下线性代数课程中与线性空间相关的若干基本概念.">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/">
+  <link rel="canonical" href="https://asami2d1.github.io/2019/07/01/Linear-space/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>线性代数进阶2——Hilbert空间和Banach空间 | Not Even Weak</title>
+  <title>线性代数进阶1——线性空间 | Not Even Weak</title>
   
 
 
@@ -335,7 +335,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/">
+    <link itemprop="mainEntityOfPage" href="https://asami2d1.github.io/2019/07/01/Linear-space/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yuan Yu">
@@ -352,7 +352,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">线性代数进阶2——Hilbert空间和Banach空间
+          <h1 class="post-title" itemprop="name headline">线性代数进阶1——线性空间
 
               
             
@@ -378,7 +378,7 @@
                 
               
 
-              <time title="创建时间：2019-07-02 23:56:39" itemprop="dateCreated datePublished" datetime="2019-07-02T23:56:39+08:00">2019-07-02</time>
+              <time title="创建时间：2019-07-01 23:51:56" itemprop="dateCreated datePublished" datetime="2019-07-01T23:51:56+08:00">2019-07-01</time>
             
 
             
@@ -395,7 +395,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-13 15:50:23" itemprop="dateModified" datetime="2019-07-13T15:50:23+08:00">2019-07-13</time>
+                <time title="修改时间：2019-07-13 21:49:14" itemprop="dateModified" datetime="2019-07-13T21:49:14+08:00">2019-07-13</time>
               
             
           </span>
@@ -413,8 +413,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/07/02/Hilbert-space-and-Banach-space/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/02/Hilbert-space-and-Banach-space/" itemprop="commentCount"></span>
+                <a href="/2019/07/01/Linear-space/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/01/Linear-space/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -442,81 +442,136 @@
       
 
       
-        <p>本文是线性代数进阶系列的第二篇笔记, 介绍这两种定义了特殊结构(内积和范数)的线性空间空间的定义并给出几个常见的例子.</p>
-<h2 id="内积空间和赋范线性空间">内积空间和赋范线性空间</h2>
-<h3 id="内积空间的定义">内积空间的定义</h3>
-<p>复线性空间<span class="math inline">\(H\)</span> 称为<em>内积空间 (酉空间)</em>,如果对任意向量<span class="math inline">\(x,y\in H\)</span> 的每个序对都对应一个复数<span class="math inline">\(\langle x,y \rangle\)</span>,满足如下内积公理：</p>
-<ol type="1">
-<li>对第一个元素线性：<span class="math inline">\(\langle \alpha x_1+\beta x_2, y \rangle = \alpha \langle x_1,y \rangle + \beta \langle x_2, y \rangle \quad \forall x_1, x_2, y \in H\)</span>.即对于给定的<span class="math inline">\(y\)</span>，<span class="math inline">\(x \mapsto \langle x, y \rangle\)</span>是一个线性泛函.</li>
-<li>共轭对称性：<span class="math inline">\(\langle x, y \rangle = \overline{\langle y, x \rangle}\)</span>.</li>
-<li>正定性：<span class="math inline">\(\forall x \in H,\ \langle x, x \rangle \geq 0\)</span>并且<span class="math inline">\(\langle x, x \rangle = 0 \Leftrightarrow x=0\)</span>.</li>
-</ol>
-<p>推论：</p>
-<ol type="1">
-<li><span class="math inline">\(\forall y\in H, \langle0, y\rangle = 0\)</span>.</li>
-<li><span class="math inline">\(\langle x, ay \rangle = \overline a \langle x, y \rangle\)</span>.</li>
-<li><span class="math inline">\(\langle x, y+z \rangle = \langle x, y \rangle + \langle x, z \rangle\)</span>.</li>
-</ol>
-<h3 id="赋范线性空间的定义">赋范线性空间的定义</h3>
-<p>复线性空间<span class="math inline">\(X\)</span>是称为<em>赋范线性空间</em> ,如果对于任意<span class="math inline">\(x \in X\)</span>, 存在非负实数<span class="math inline">\(\|x\|\)</span>, 称为<span class="math inline">\(x\)</span>的范数, 满足如下范数公理:</p>
-<ol type="1">
-<li><span class="math inline">\(\forall x,y \in X,\ \|x+y\| \leq \|x\| + \|y\|\)</span>.</li>
-<li>若<span class="math inline">\(x\in X\)</span>, <span class="math inline">\(k\)</span>为标量, 则<span class="math inline">\(\|kx \| = |k|\cdot\|x\|\)</span>.</li>
-<li><span class="math inline">\(\|x\|=0 \Rightarrow x=0\)</span>.</li>
-</ol>
-<h3 id="内积诱导的范数">内积诱导的范数</h3>
-<p>对于内积空间<span class="math inline">\(H\)</span>, 可以定义范数<span class="math inline">\(\|x\|=\sqrt{\langle x, x \rangle}\)</span>. 由于内积的性质, 它满足范数公理.</p>
-<p>证明:</p>
-<p>先证明, 对于如上定义的范数<span class="math inline">\(\|x\|\)</span>, Cauchy-Schwarz 不等式 <span class="math inline">\(|\langle x, y \rangle| \leq \|x\| \|y\|\)</span> 成立:</p>
-<p>令<span class="math inline">\(A=\|x\|^2,\ B=|\langle x, y \rangle|,\ C=\|y\|^2\)</span>, 于是存在<span class="math inline">\(\alpha \in \mathbb{C},\ |\alpha|=1\)</span>， 使得<span class="math inline">\(\alpha \langle y, x \rangle = B\)</span>. 对于任意实数<span class="math inline">\(r\)</span>就有 <span class="math display">\[
-\begin{align}
-\langle x - r\alpha y, x - r\alpha y \rangle &amp;= \langle x, x-r\alpha y \rangle - r \alpha \langle y, x-r\alpha y \rangle \\
-&amp;=\langle x, x \rangle -r\overline{\alpha} \langle x, y \rangle - r\alpha\langle y, x \rangle + r^2\langle y, y \rangle \\
-&amp;= A - 2Br + Cr^2.
-\end{align}
-\]</span> 由于<span class="math inline">\(\langle x - r\alpha y, x - r\alpha y \rangle \geq 0\)</span>恒成立, 并且有<span class="math inline">\(C \geq 0\)</span>, 于是关于<span class="math inline">\(r\)</span>的二次多项式<span class="math inline">\(A - 2Br + Cr^2\)</span>满足<span class="math inline">\(B^2-AC\leq0\)</span>, 即 <span class="math display">\[
-|\langle x, y \rangle|^2 \leq \|x\|\|y\|
-\]</span> 由Cauchy-Schwarz 不等式有 <span class="math display">\[
-\begin{align}
-\|x+y\|^2 &amp;= \langle x+y, x+y \rangle \\
-          &amp;= \langle x, x \rangle + \langle x, y \rangle +\langle y, x \rangle + \langle y, y \rangle \\
-          &amp;\leq \|x\|^2 + 2\|x\|\ \|y\| + \|y\|^2 \\
-          &amp;= (\|x\|+\|y\|)^2
-\end{align}
-\]</span> 满足范数公理 1.</p>
-<p>由于 <span class="math display">\[
-\begin{align}
-\|kx\|^2&amp;=\langle kx, kx \rangle \\
-&amp;= k\overline{k}\langle x, x\rangle \\
-&amp;= |k|^2\|x\|^2
-\end{align}
-\]</span> 于是<span class="math inline">\(\|kx \| = |k|\cdot\|x\|\)</span>, 满足范数公理 2.</p>
-<p>由于内积的正定性, 范数公理 3自然成立. 因此<span class="math inline">\(\|x\|=\sqrt{\langle x, x \rangle}\)</span>符合范数的定义, 称为内积诱导的范数. <span class="math inline">\(\Box\)</span></p>
-<p>由此我们可知内积空间都是赋范空间.</p>
-<h3 id="内积空间与赋范线性空间上的度量与完备性">内积空间与赋范线性空间上的度量与完备性</h3>
-<p>对于任意赋范线性空间<span class="math inline">\(X\)</span>, 可以定义度量函数<span class="math inline">\(d(x, y) = \|x-y\|\)</span>, 由不等式<span class="math inline">\(\|x+y\| \leq \|x\| + \|y\|\)</span>可知三角不等式<span class="math inline">\(d(x,z) \leq d(x,y) + d(y, z)\)</span>成立, 于是在上述度量函数下, 赋范线性空间<span class="math inline">\(X\)</span>构成一个度量空间. 如果这个度量空间是<em>完备的</em>, 即<span class="math inline">\((X,d)\)</span>内每个Cauchy列都是收敛的, 我们就称赋范线性空间<span class="math inline">\(X\)</span>是完备的.</p>
-<p>对于内积空间<span class="math inline">\(H\)</span>, 如果在它的内积诱导的范数的意义下的赋范线性空间的按上述方法定义的度量空间是完备的, 那么我们称内积空间<span class="math inline">\(H\)</span>是完备的.</p>
-<p><strong>定理</strong>: 有限维赋范空间总是完备的</p>
-<h2 id="hilbert空间和banach空间">Hilbert空间和Banach空间</h2>
-<h3 id="定义">定义</h3>
-<p>完备的内积空间称为Hilbert空间.</p>
-<p>完备的赋范线性空间称为Banach空间.</p>
-<h3 id="例子">例子</h3>
+        <p>本文是线性代数进阶系列的第一篇, 这一系列的笔记都是基于华东师大计算机系线性代数进阶的暑期课程内容写成的, 但是在内容上并不拘泥于课程内容, 总原课程基础上删去和补充了一部分内容. 本文主要回顾一下线性代数课程中与线性空间相关的若干基本概念.</p>
+<a id="more"></a>
+<h2 id="线性空间">线性空间</h2>
+<h3 id="线性空间的定义">线性空间的定义</h3>
+<h4 id="加法标量乘法">加法、标量乘法</h4>
 <ul>
-<li><p>(Euclid空间) 复线性空间<span class="math inline">\(\mathbb{C}^n=\{(\xi_1,\dots,\xi_n)|\xi_i\in\mathbb{C}, i=1,\dots,n\}\)</span>, 对于<span class="math inline">\(x=(\xi_1, \dots, \xi_n)\in\mathbb{C}^n\)</span>和<span class="math inline">\(y=(\eta_1,\dots,\eta_n)\in\mathbb{C}^n\)</span>定义内积<span class="math inline">\(\langle x, y \rangle= \sum\limits_{i=1}^n{\xi_i\overline{\eta_i}}\)</span>, 则<span class="math inline">\(\mathbb{C}^n\)</span>称为一个Hilbert空间.</p></li>
-<li><p>(Hilbert序列空间) 任意集合<span class="math inline">\(B\)</span>上的序列空间<span class="math inline">\(\ell^2(B)=\biggl\{x:B\to\mathbb{C}\biggl|\sum\limits_{b\in B}|x(b)|^2 &lt; \infty\biggr\}\)</span>在内积 <span class="math display">\[
-\langle x,y \rangle = \sum\limits_{b\in B}x(b)\overline{y(b)}
-\]</span> 意义下成为Hilbert空间</p></li>
-<li><p>(Lebesgue空间) 若<span class="math inline">\(\mu\)</span>是一个正测度, 那么<span class="math inline">\(L^2(\mu)\)</span>将是一个具有内积 <span class="math display">\[
-\langle f, g\rangle = \int_X{f\overline{g}\ d\mu}
-\]</span> 的Hilbert空间.</p>
-<p>同时<span class="math inline">\(L^2(\mu)\)</span>也是一个具有范数 <span class="math display">\[
-\|f\|=\biggl\{\int_X{|f|^2\ d\mu}\biggr\}^\frac{1}{2}
-\]</span> 的Banach空间.</p></li>
-<li><p>(反例——非Hilbert空间的内积空间) <span class="math inline">\([0,1]\)</span>上全体连续复函数构成的线性空间在内积 <span class="math display">\[
-\langle f, g \rangle = \int_0^1{f(t)\overline{g(t)}\ dt}
-\]</span> 意义下是内积空间但不是Hilbert空间</p></li>
+<li>集合<span class="math inline">\(V\)</span>上的加法是一个映射：<span class="math inline">\(+:V\times V \mapsto V\)</span> 将每一对<span class="math inline">\(u,v\in V\)</span>映射到<span class="math inline">\(V\)</span>的一个元素<span class="math inline">\(u+v\)</span>.</li>
+<li>集合<span class="math inline">\(V\)</span>上的标量乘法是一个映射：<span class="math inline">\(\cdot:\mathbb{F}\times V \mapsto V\)</span>，将任意<span class="math inline">\(\lambda \in \mathbb{F}, v\in V\)</span>映射到元素<span class="math inline">\(\lambda v \in V\)</span>.</li>
 </ul>
+<h4 id="线性空间-1">线性空间</h4>
+<ul>
+<li>线性空间是带有加法运算和标量乘法运算,且满足以下性质的集合<span class="math inline">\(V\)</span>:
+<ol type="1">
+<li><strong>交换性</strong>：<span class="math inline">\(\forall u,v\in V, u+v=v+u.\)</span></li>
+<li><strong>结合性</strong>： <span class="math inline">\(\forall u, v, w \in V, a,b\in\mathbb{F},\ (u+v)+w=u+(v+w).\)</span></li>
+<li><strong>加法单位元</strong>： <span class="math inline">\(\exists 0 \in V,\mathrm{s.t.}\forall v \in V, v+0=v.\)</span></li>
+<li><strong>加法逆元</strong>：<span class="math inline">\(\forall v \in V, \exists w\in V, \mathrm{s.t.}\ v+w=0.\)</span></li>
+<li><strong>乘法单位元</strong>：<span class="math inline">\(\forall v \in V, 1v=v.\)</span></li>
+<li><strong>分配性</strong>：<span class="math inline">\(\forall a,b \in \mathbb{F},\ u,v\in V, a(u+v)=au+av, (a+b)v=av+bv.\)</span></li>
+</ol></li>
+</ul>
+<h4 id="函数集合记号mathbbfs">函数集合记号<span class="math inline">\(\mathbb{F}^S\)</span></h4>
+<ul>
+<li>设<span class="math inline">\(S\)</span>是一个集合，我们用<span class="math inline">\(\mathbb{F}^S\)</span>表示 <span class="math inline">\(S\)</span>到 <span class="math inline">\(\mathbb{F}\)</span>的所有函数的集合。</li>
+<li>对于 <span class="math inline">\(f,g\in \mathbb{F}^S\)</span>规定<em>和</em><span class="math inline">\(f+g\in \mathbb{F}^S\)</span>是如下函数：对所有 <span class="math inline">\(x\in S\)</span>,</li>
+</ul>
+<p><span class="math display">\[
+(f+g)(x) = f(x)+g(x).
+\]</span></p>
+<ul>
+<li>对于 <span class="math inline">\(\lambda \in \mathbb{F}\)</span>和 <span class="math inline">\(f\in \mathbb{F}^S\)</span>，规定<em>乘积</em><span class="math inline">\(\lambda f \in \mathbb{F}^S\)</span>是如下函数：对所有 <span class="math inline">\(x\in S\)</span>,</li>
+</ul>
+<p><span class="math display">\[
+(\lambda f)(x) = \lambda f(x)
+\]</span></p>
+<ul>
+<li>易证<span class="math inline">\(\mathbb{F}^S\)</span>是一个向量空间</li>
+</ul>
+<h3 id="线性空间的若干基本性质">线性空间的若干基本性质</h3>
+<p><strong>加法单位元唯一</strong></p>
+<ul>
+<li>证明略（提示：用反证法）</li>
+</ul>
+<p><strong>加法逆元唯一</strong></p>
+<ul>
+<li>证明略（提示：用反证法）</li>
+</ul>
+<p><strong>(数0乘以向量)</strong> 对任意<span class="math inline">\(v\in V\)</span>都有<span class="math inline">\(0v=0.\)</span></p>
+<p>证明：</p>
+<p>对任意<span class="math inline">\(v\in V\)</span>，我们有 <span class="math display">\[
+0v=(0+0)v=0v+0v
+\]</span> 在两边减去<span class="math inline">\(0 v\)</span> <span class="math display">\[
+0v=0
+\]</span> <strong>(数乘以向量0)</strong> 对任意<span class="math inline">\(a\in \mathbb{F}\)</span>都有<span class="math inline">\(a0=0.\)</span></p>
+<p>证明：</p>
+<p>对<span class="math inline">\(a\in \mathbb{F}\)</span>, 我们有 <span class="math display">\[
+a0=a(0+0)=a0+a0
+\]</span> 在上式两边加上<span class="math inline">\(a0\)</span>的逆元，可得<span class="math inline">\(0 = a0.\)</span></p>
+<p><strong>(数-1乘以向量)</strong> 对任意<span class="math inline">\(v\in V\)</span>, <span class="math inline">\((-1)v=-v\)</span>.</p>
+<p>证明：</p>
+<p>对于<span class="math inline">\(a\in \mathbb{F}\)</span>, 我们有 <span class="math display">\[
+v+(-1)v = 1v+(-1)v = (1+(-1))v=0v=0.
+\]</span></p>
+<h3 id="评注">评注</h3>
+<h4 id="线性空间和模">线性空间和模</h4>
+<p>从更一般的角度出发, 我们可以认为一个线性空间由以下两部分组合而成:</p>
+<ul>
+<li><p>加法群<span class="math inline">\((M,+)\)</span></p></li>
+<li><p>域 <span class="math inline">\(R\)</span> 以及映射 <span class="math inline">\(R \times M \to M\)</span>, 记为<span class="math inline">\((r, m) \mapsto r \cdot m = rm\)</span>, 满足: <span class="math display">\[
+\begin{align}
+r(m_1+m_2)&amp;=rm_1+rm_2, &amp;r\in R,\ m_1,m_2\in M\\
+(r_1+r_2)m&amp;=r_1m+r_2m, &amp;r_1,r_2\in R,\ m\in M\\
+(r_1 r_2)m&amp;=r_1(r_2m), &amp;r_1,r_2\in R,\ m\in M\\
+1_R\cdot m&amp;=m.
+\end{align}
+\]</span></p></li>
+</ul>
+<p>事实上, 我们可以将对 <span class="math inline">\(R\)</span> 的要求从域放宽的环, 这样我们就得到了抽象代数中的<strong>左<span class="math inline">\(R\)</span>-模</strong>的概念, 换句话说, 线性空间实际上是左<span class="math inline">\(R\)</span>-模的一大类特例.</p>
+<h4 id="关于数乘的形式">关于数乘的形式</h4>
+<p>另一方面, 对于任意加法群<span class="math inline">\(M\)</span>, <span class="math inline">\(\mathrm{End}(M)\)</span>构成一个自然的环结构, 于是赋予<span class="math inline">\(M\)</span>左模结构等同于环同态: <span class="math display">\[
+R\longrightarrow \mathrm{End}(M) \\
+r\longmapsto [m\mapsto rm]
+\]</span> 赋予<span class="math inline">\(M\)</span>右模结构等同于环同态: <span class="math display">\[
+R^{\mathrm{op}}\longrightarrow \mathrm{End}(M) \\
+r\longmapsto [m\mapsto mr]
+\]</span> 于是对于交换环而言, 左模和右模其实是同一个东西, 而由于域都是交换环, 因此数乘运算无论定义为左乘还是又称都是一样的. 虽然我们习惯上将数乘运算定义为左乘的形式, 但实际中有时仍会有人将所乘的数写到右边, 由于上述原因这样做也可被接受的.</p>
+<h2 id="子空间">子空间</h2>
+<h3 id="子空间的定义">子空间的定义</h3>
+<p>如果向量空间<span class="math inline">\(V\)</span>的子集<span class="math inline">\(U\)</span>在与<span class="math inline">\(V\)</span>相同的加法和标量乘法下是向量空间，则称<span class="math inline">\(U\)</span>是<span class="math inline">\(V\)</span>的子空间。</p>
+<p>(<strong>子空间的条件</strong>) <span class="math inline">\(U\subseteq V\)</span> 是 <span class="math inline">\(V\)</span> 的子空间，当且仅当<span class="math inline">\(U\)</span>满足以下条件：</p>
+<ol type="1">
+<li><strong>加法单位元</strong>：<span class="math inline">\(0\in U\quad(\Longleftrightarrow U\neq \varnothing).\)</span></li>
+<li><strong>加法封闭性</strong>：<span class="math inline">\(u,w\in U \Longrightarrow u+w\in U\)</span>.</li>
+<li><strong>标量乘法封闭性</strong>：<span class="math inline">\((a\in \mathbb{F})\wedge(u\in U)\Longrightarrow au\in U\)</span>.</li>
+</ol>
+<ul>
+<li>证明略</li>
+</ul>
+<h3 id="若干特殊的子空间">若干特殊的子空间</h3>
+<p><strong>平凡子空间</strong></p>
+<ul>
+<li><span class="math inline">\(V\)</span>和<span class="math inline">\(\{0\}\)</span>总是<span class="math inline">\(V\)</span>的子空间，称为平凡子空间。<span class="math inline">\(V\)</span>的异于<span class="math inline">\(V\)</span>和<span class="math inline">\(\lbrace 0 \rbrace\)</span>的子空间称为非平凡子空间。</li>
+</ul>
+<p><strong>真子空间</strong></p>
+<ul>
+<li><span class="math inline">\(V\)</span>异于自身的子空间</li>
+</ul>
+<p><strong>生成子空间</strong>（张成空间）</p>
+<ul>
+<li>若<span class="math inline">\(S\)</span>是域<span class="math inline">\(\mathbb{F}\)</span>上的向量空间<span class="math inline">\(V\)</span>的子集，则<span class="math inline">\(S\)</span>的生成子空间<span class="math inline">\(\mathrm{span} S\)</span>是<span class="math inline">\(V\)</span>中所有包含<span class="math inline">\(S\)</span>的子空间的交。</li>
+<li>若<span class="math inline">\(S\)</span>非空，则<span class="math inline">\(\mathrm{span} S=\lbrace a_1 v_1 +\dots + a_k v_k : v_1,\dots,v_k\in S,a_1,\dots ,a_k\in\mathbb{F},\ k=1,2,,\dots\rbrace\)</span>，若<span class="math inline">\(S\)</span>为空集，则<span class="math inline">\(S\)</span>包含于<span class="math inline">\(V\)</span>的所有子空间中，所有<span class="math inline">\(\mathrm{span}S=\lbrace 0 \rbrace\)</span>.</li>
+<li><span class="math inline">\(S\)</span>称为<span class="math inline">\(\mathrm{span}V\)</span>如果<span class="math inline">\(\mathrm{span}S=V\)</span>。</li>
+</ul>
+<h3 id="子空间的和与直和">子空间的和与直和</h3>
+<p><strong>线性组合</strong></p>
+<ul>
+<li>域<span class="math inline">\(\mathbb{F}\)</span>上的向量空间<span class="math inline">\(V\)</span>的一个线性组合是任意一个形如<span class="math inline">\(a_1 v_1 +\dots + a_k v_k\)</span>的表达式，其中，<span class="math inline">\(a_1,\dots,a_k\in\mathbb{F}\)</span>，<span class="math inline">\(v_1,\dots, v_k\in V\)</span>,<span class="math inline">\(k\in \mathbb{N_+}\)</span>.</li>
+<li>称线性组合<span class="math inline">\(a_1 v_1 +\dots + a_k v_k\)</span>是<strong>平凡的</strong>，如果<span class="math inline">\(a_1=\dots=a_k=0\)</span>，反之为<strong>非平凡的</strong>。</li>
+</ul>
+<p><strong>和</strong></p>
+<ul>
+<li><span class="math inline">\(\mathbb{F}\)</span>上两个子空间<span class="math inline">\(S_1,S_2\)</span>的和定义为子空间<span class="math inline">\(S_1+S_2=\mathrm{span}\lbrace S_1 \cup S_2\rbrace = \lbrace x+y:x\in S_1,y\in S_2\rbrace\)</span>。</li>
+</ul>
+<p><strong>直和</strong></p>
+<ul>
+<li>如果<span class="math inline">\(S_1\cap S_2=\lbrace 0 \rbrace\)</span>则，称和<span class="math inline">\(S_1+S_1\)</span>为直和，记为<span class="math inline">\(S_1\oplus S_2\)</span>,对于每一个<span class="math inline">\(z\in S_1 \oplus S_2\)</span>都可唯一的标示为<span class="math inline">\(z = x+y, x\in S_1, y\in S_2\)</span>.</li>
+</ul>
+<p><strong>定理</strong>（直和的条件）设<span class="math inline">\(U_1,\dots,U_n\)</span>都是<span class="math inline">\(V\)</span>的子空间. <span class="math inline">\(U_1+\dots+U_m\)</span>是直和，当且仅当0向量表示为<span class="math inline">\(u_1+\dots+u_n\ (u_j\in U_j)\)</span> 的唯一方式是每个<span class="math inline">\(u_j=0.\)</span> (证略)</p>
+<h3 id="评注-1">评注</h3>
+<p>子空间和直和分解在线性代数中占有重要的地位, 这里我们只给出简单介绍, 而不深入讨论, 具体内容将在之后用到的时候详细叙述.</p>
 
       <script>
         window.disqusProxy={
@@ -525,7 +580,7 @@
           server: '45.77.22.101',
           port: 5509,
           adminAvatar: '/avatars/admin-avatar.jpg',
-          identifier: '2019/07/02/Hilbert-space-and-Banach-space/',
+          identifier: '2019/07/01/Linear-space/',
         };
         window.disqus_config = function () {
           this.page.url = window.location.href;
@@ -565,7 +620,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/" title="线性代数进阶2——Hilbert空间和Banach空间">https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/</a>
+    <a href="https://asami2d1.github.io/2019/07/01/Linear-space/" title="线性代数进阶1——线性空间">https://asami2d1.github.io/2019/07/01/Linear-space/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -597,8 +652,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/01/Linear-space/" rel="next" title="线性代数进阶1——线性空间">
-                <i class="fa fa-chevron-left"></i> 线性代数进阶1——线性空间
+              <a href="/2019/05/28/duality-principle/" rel="next" title="射影几何与范畴论中的对偶原理">
+                <i class="fa fa-chevron-left"></i> 射影几何与范畴论中的对偶原理
               </a>
             
           </div>
@@ -606,6 +661,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/02/inner-product-and-norm-1/" rel="prev" title="线性代数进阶2——内积与范数(上)">
+                线性代数进阶2——内积与范数(上) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -806,7 +865,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#内积空间和赋范线性空间"><span class="nav-number">1.</span> <span class="nav-text">内积空间和赋范线性空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内积空间的定义"><span class="nav-number">1.1.</span> <span class="nav-text">内积空间的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#赋范线性空间的定义"><span class="nav-number">1.2.</span> <span class="nav-text">赋范线性空间的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内积诱导的范数"><span class="nav-number">1.3.</span> <span class="nav-text">内积诱导的范数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内积空间与赋范线性空间上的度量与完备性"><span class="nav-number">1.4.</span> <span class="nav-text">内积空间与赋范线性空间上的度量与完备性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hilbert空间和banach空间"><span class="nav-number">2.</span> <span class="nav-text">Hilbert空间和Banach空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义"><span class="nav-number">2.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例子"><span class="nav-number">2.2.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#线性空间"><span class="nav-number">1.</span> <span class="nav-text">线性空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性空间的定义"><span class="nav-number">1.1.</span> <span class="nav-text">线性空间的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#加法标量乘法"><span class="nav-number">1.1.1.</span> <span class="nav-text">加法、标量乘法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#线性空间-1"><span class="nav-number">1.1.2.</span> <span class="nav-text">线性空间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#函数集合记号mathbbfs"><span class="nav-number">1.1.3.</span> <span class="nav-text">函数集合记号\(\mathbb{F}^S\)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线性空间的若干基本性质"><span class="nav-number">1.2.</span> <span class="nav-text">线性空间的若干基本性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#评注"><span class="nav-number">1.3.</span> <span class="nav-text">评注</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性空间和模"><span class="nav-number">1.3.1.</span> <span class="nav-text">线性空间和模</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关于数乘的形式"><span class="nav-number">1.3.2.</span> <span class="nav-text">关于数乘的形式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#子空间"><span class="nav-number">2.</span> <span class="nav-text">子空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#子空间的定义"><span class="nav-number">2.1.</span> <span class="nav-text">子空间的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#若干特殊的子空间"><span class="nav-number">2.2.</span> <span class="nav-text">若干特殊的子空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子空间的和与直和"><span class="nav-number">2.3.</span> <span class="nav-text">子空间的和与直和</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#评注-1"><span class="nav-number">2.4.</span> <span class="nav-text">评注</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -966,9 +1025,9 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "https://asami2d1.github.io/2019/07/02/Hilbert-space-and-Banach-space/";
-    this.page.identifier = "2019/07/02/Hilbert-space-and-Banach-space/";
-    this.page.title = '线性代数进阶2——Hilbert空间和Banach空间';
+    this.page.url = "https://asami2d1.github.io/2019/07/01/Linear-space/";
+    this.page.identifier = "2019/07/01/Linear-space/";
+    this.page.title = '线性代数进阶1——线性空间';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
